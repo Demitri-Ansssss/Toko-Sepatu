@@ -1,0 +1,254 @@
+:root{
+    --primary: #b6895b;
+    --bg: #0d0c0c;
+
+}
+*{
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Popins',sans-serif;
+    background-color: var(--bg);
+    color: aliceblue;
+    min-height: 2000px ;
+}
+
+/* navbar */
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.4rem 7%;
+ background-color:rgba(47, 47, 47, 0.8);
+ border-bottom: 2px solid #5c4732;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 999999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+}
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+
+}
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+.navbar .navbar-nav a::after{
+    content: '';
+    border-bottom: 0.1rem solid var(--primary);
+    display: block;
+    padding-bottom: 0.5rem;
+    transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a{
+    margin: 0.5rem;
+    color: #fff;
+}
+.navbar .navbar-extra a:hover{
+    color: var(--primary);
+}
+
+#menu{
+    display: none;
+}
+
+
+
+
+
+/* secsions start */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/hero-content.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(11, 11, 16) 8%,
+    rgba(255,255,255,0) 50%);
+}
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+.hero .content h2{
+    font-size: 3.4rem;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+    line-height: 1.2;
+}
+.hero .content h2 span{
+    color: var(--primary);
+}
+.hero .content p {
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+    mix-blend-mode: difference;
+}
+.hero .content .cta{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+}
+/* secsions end */
+
+
+/* about secsions */
+.ourproduct{
+    padding: 6rem 7% 1.4rem;
+}
+.ourproduct h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+.ourproduct h2 span{
+    color: var(--primary);
+}
+
+/* menu */
+.ourproduct .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.product-card{
+    text-align: center;
+}
+.ourproduct .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+  }
+  
+  .ourproduct .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+  }
+  
+  .ourproduct .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .ourproduct .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ourproduct .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .ourproduct .product-image {
+    padding: 1rem 0;
+  }
+  
+  .ourproduct .product-image img {
+    height: 20rem;
+    width: 20rem;
+  }
+  
+  .ourproduct .product-content h3 {
+    font-size: 2rem;
+  }
+  
+  .ourproduct .product-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+  }
+  
+  .ourproduct .product-stars .star-full {
+    fill: var(--primary);
+  }
+  
+  .ourproduct .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .ourproduct .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+  
+
+
+/* media query */
+
+/* hp */
+@media(max-width: 1366px){
+    html{
+        font-size: 70%;
+    }
+}
+/* laptop */
+@media(max-width: 758px){
+    html{
+        font-size: 62.5%;
+    }
+}
+/* tablet */
+@media(max-width: 450px){
+    html{
+        font-size: 45%;
+    }
+}

@@ -1,0 +1,99 @@
+:root{
+    --primary: #b6895b;
+    --bg: #0d0c0c;
+
+}
+*{
+    font-family: 'Popins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Popins',sans-serif;
+    background-color: var(--bg);
+    color: rgb(14, 137, 245);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.navbar-brand .span{
+    color: #b6895b;
+}
+.nav-text{
+    color: aliceblue;
+}
+.logo{
+    color: white;
+    font-style: italic;
+}
+.hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero .content{
+    padding: 1.4rem 7%;
+    
+}
+.hero .content h2{
+    font-size: 3.4rem;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+    line-height: 1.2;
+}
+.hero .content h2 span{
+    color: var(--primary);
+}
+.hero .content p {
+    font-size: 1.1rem;
+    margin-top: 0.1rem;
+    color: aliceblue;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+    mix-blend-mode: difference;
+}
+.hero .content .cta{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(1 ,1 ,3, 0.5);
+    text-decoration: none;
+}
+.ourproduct{
+    padding: 1rem 7% 1.4rem;
+}
+.ourproduct h5{
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+.ourproduct h5 span{
+    color: #b6895b;
+}
+.product-card{
+    text-align: center;
+}
+.ourproduct .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.ourproduct a{
+    text-decoration: none;
+}
